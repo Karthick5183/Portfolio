@@ -39,7 +39,7 @@ const projectsData = {
       'Simulated secure payments',
       'Inventory & product listing system'
     ],
-    github: 'https://github.com/KarthickJ/Farmconnect-E-Commerce-App'
+    github: 'https://github.com/Karthick5183/Farmconnect.git'
   }
 };
 
