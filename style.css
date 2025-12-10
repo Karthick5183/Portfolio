@@ -66,3 +66,27 @@ body{
 #resumeImg{display:block;max-width:98%;max-height:80vh;width:auto;height:auto;object-fit:contain;margin:0 auto;border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.6);image-rendering:-webkit-optimize-contrast}
 #resumeModal .p-4{padding:1rem}
 #resumeModal a#resumeDownloadBtn,#resumeModal a#resumeOpenNewBtn{color:#cbd5e1;text-decoration:none}
+/* ---------- Scoped About-avatar styles (paste at end of style.css) ---------- */
+section#about .about-avatar-wrapper {
+  width: 16rem;                /* 256px */
+  height: 16rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+section#about .about-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background-size: cover;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+
+
+
+
