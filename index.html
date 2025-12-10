@@ -1,386 +1,286 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karthick J | Software Engineer Portfolio</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Karthick J | Software Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body id="top">
+  <div class="background-pattern"></div>
 
-    <div class="background-pattern"></div>
+  <div id="resume-content" class="hidden">
+    <h2 class="text-3xl font-bold mb-4 text-white">KARTHICK J | Software Engineer</h2>
+    <p class="text-gray-300 mb-6">Passionate IT professional with expertise in Java, Python, SQL, and SAP ERP...</p>
+  </div>
 
-    <!-- Resume Fallback Text -->
-    <div id="resume-content" class="hidden">
-        <h2 class="text-3xl font-bold mb-4 text-white">KARTHICK J | Software Engineer</h2>
-        <p class="text-gray-300 mb-6">Passionate IT professional with expertise in Python, SQL, Java, and SAP ERP...</p>
+  <nav id="navbar" class="fixed inset-y-0 left-0 w-20 md:w-56 bg-gray-900/95 backdrop-blur-sm z-50 hidden md:flex flex-col p-4">
+    <a href="#skills" class="bg-blue-600/30 p-2 text-xs text-center text-blue-300 rounded-lg neon-glow mb-8">
+      <i data-lucide="zap" class="w-3 h-3 inline mr-1"></i> Current Focus: Java & SQL
+    </a>
+    <div class="flex flex-col h-full justify-center space-y-4 text-center">
+      <a href="#home" class="nav-item group"><i data-lucide="home" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Home</span></a>
+      <a href="#about" class="nav-item group"><i data-lucide="user" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">About</span></a>
+      <a href="#skills" class="nav-item group"><i data-lucide="code" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Skills</span></a>
+      <a href="#projects" class="nav-item group"><i data-lucide="layout-grid" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Projects</span></a>
+      <a href="#graduation" class="nav-item group"><i data-lucide="graduation-cap" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Graduation</span></a>
+      <a href="#contact" class="nav-item group"><i data-lucide="mail" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Contact</span></a>
     </div>
+    <a href="https://www.linkedin.com/in/karthick51" target="_blank" class="mt-8 text-center">
+      <i data-lucide="linkedin" class="w-6 h-6 mx-auto text-gray-500 hover:text-white"></i>
+    </a>
+  </nav>
 
-    <!-- LEFT NAVIGATION BAR -->
-    <nav id="navbar" class="fixed inset-y-0 left-0 w-20 md:w-56 bg-gray-900/95 backdrop-blur-sm z-50 hidden md:flex flex-col p-4">
-
-        <a href="#skills" class="bg-blue-600/30 p-2 text-xs text-center text-blue-300 rounded-lg neon-glow mb-8">
-            <i data-lucide="zap" class="w-3 h-3 inline mr-1"></i> Current Focus: Python & SQL
-        </a>
-
-        <div class="flex flex-col h-full justify-center space-y-4 text-center">
-            <a href="#home" class="nav-item group"><i data-lucide="home" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Home</span></a>
-            <a href="#about" class="nav-item group"><i data-lucide="user" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">About</span></a>
-            <a href="#skills" class="nav-item group"><i data-lucide="code" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Skills</span></a>
-            <a href="#projects" class="nav-item group"><i data-lucide="layout-grid" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Projects</span></a>
-            <a href="#graduation" class="nav-item group"><i data-lucide="graduation-cap" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Graduation</span></a>
-            <a href="#headshots" class="nav-item group"><i data-lucide="monitor-check" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Headshots</span></a>
-            <a href="#explore" class="nav-item group"><i data-lucide="camera" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Explore</span></a>
-            <a href="#contact" class="nav-item group"><i data-lucide="mail" class="w-6 h-6 mx-auto text-gray-400"></i><span class="text-xs hidden md:block">Contact</span></a>
-        </div>
-
-        <a href="https://www.linkedin.com/in/karthick51" target="_blank" class="mt-8 text-center">
-            <i data-lucide="linkedin" class="w-6 h-6 mx-auto text-gray-500 hover:text-white"></i>
-        </a>
-    </nav>
-
-    <!-- MOBILE TOP NAV -->
-    <div class="fixed top-0 left-0 right-0 md:hidden bg-gray-900/95 z-40">
-        <div class="flex justify-around py-3 text-sm">
-            <a href="#home" class="text-gold-400">Home</a>
-            <a href="#skills" class="text-gray-400">Skills</a>
-            <a href="#projects" class="text-gray-400">Projects</a>
-            <a href="#contact" class="text-gray-400">Contact</a>
-        </div>
+  <div class="fixed top-0 left-0 right-0 md:hidden bg-gray-900/95 z-40">
+    <div class="flex justify-around py-3 text-sm">
+      <a href="#home" class="text-gold-400">Home</a>
+      <a href="#skills" class="text-gray-400">Skills</a>
+      <a href="#projects" class="text-gray-400">Projects</a>
+      <a href="#contact" class="text-gray-400">Contact</a>
     </div>
+  </div>
 
+  <main class="md:ml-56 p-4 md:p-10 pt-20">
 
-    <!-- MAIN CONTENT -->
-    <main class="md:ml-56 p-4 md:p-10 pt-20">
+    <section id="home" class="min-h-screen flex items-center justify-center">
+      <div class="text-center max-w-4xl">
+        <p class="text-2xl text-gray-400 mb-4">Hello, I'm</p>
+        <h1 class="text-5xl md:text-8xl font-extrabold tracking-tight mb-4"><span class="text-white">KARTHICK</span><span class="text-gold-400"> J</span></h1>
+        <h2 class="text-3xl md:text-5xl text-blue-400 font-light mb-8">Software Engineer</h2>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-12">A dedicated IT professional skilled in Java, Python, SQL, Html, Css.</p>
+        <button onclick="showResumeModal()" class="bg-gold-500 text-gray-900 font-bold py-3 px-8 rounded-full text-lg neon-glow">View My Resume</button>
+      </div>
+    </section>
 
-        <!-- HOME SECTION -->
-        <section id="home" class="min-h-screen flex items-center justify-center">
-            <div class="text-center max-w-4xl">
-
-                <p class="text-2xl text-gray-400 mb-4">Hello, I'm</p>
-
-                <!-- DUAL COLOR NAME -->
-                <h1 class="text-5xl md:text-8xl font-extrabold tracking-tight mb-4">
-                    <span class="text-white">KARTHICK</span>
-                    <span class="text-gold-400"> J</span>
-                </h1>
-
-                <h2 class="text-3xl md:text-5xl text-blue-400 font-light mb-8">Software Engineer</h2>
-
-                <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
-                    A dedicated IT professional skilled in Python, Java, SQL, and SAP ERP.
-                </p>
-
-                <button onclick="showResumeModal()" class="bg-gold-500 text-gray-900 font-bold py-3 px-8 rounded-full text-lg neon-glow">
-                    View My Resume
-                </button>
-            </div>
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-        <section id="about" class="py-20 border-t border-gray-800">
-    <h2 class="text-4xl font-bold mb-10 text-center text-white">About Me</h2>
-    <div class="flex flex-col md:flex-row items-center gap-8 bg-gray-900 p-8 rounded-xl shadow-2xl">
+    <section id="about" class="py-20 border-t border-gray-800">
+      <h2 class="text-4xl font-bold mb-10 text-center text-white">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-gray-900 p-8 rounded-xl shadow-2xl">
         <div class="w-full md:w-1/3 flex flex-col items-center">
-            <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-gold-500 neon-glow">
-                <img src="5BF33CB3-9036-41EA-82E5-509E7CA52681.jpeg.jpg" alt="Karthick J Profile Picture" class="w-full h-full object-cover">
-            </div>
-            <p class="text-sm text-gray-500 mt-3">Ready for the next challenge.</p>
+          <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-gold-500 neon-glow">
+            <img src="5BF33CB3-9036-41EA-82E5-509E7CA52681.jpeg.jpg" alt="profile" class="w-full h-full object-cover">
+          </div>
+          <p class="text-sm text-gray-500 mt-3">Ready for the next challenge.</p>
         </div>
-
         <div class="w-full md:w-2/3 text-center md:text-left">
-            <p class="text-lg text-gray-300 mb-4">
-                <strong class="text-gold-400">KARTHICK J</strong> | B.Tech in Information Technology
-            </p>
-
-            <!-- Extended professional summary -->
-            <p class="text-gray-400 leading-relaxed">
-                I am a proactive and results-oriented Information Technology professional with hands-on experience building software and systems using Python, Java, SQL and SAP ERP.
-                I enjoy solving real-world problems — from backend data modeling and query optimization to full-stack features and IoT integrations.
-                During my academic projects and internships I delivered scalable database schemas, automated data-processing pipelines, and demonstrable prototypes (IoT & mobile).
-                I’m comfortable working with cross-functional teams, learning new stacks quickly, and shipping clean code that solves user needs.
-            </p>
-
-            <div class="mt-6 space-y-2">
-                <p class="text-gray-400"><i data-lucide="phone" class="w-4 h-4 inline mr-2 text-blue-400"></i> <a href="tel:7904567988" class="text-gray-300">+91 7904567988</a></p>
-                <p class="text-gray-400"><i data-lucide="mail" class="w-4 h-4 inline mr-2 text-blue-400"></i> <a href="mailto:karthickjayavelu5@gmail.com" class="text-gray-300">karthickjayavelu5@gmail.com</a></p>
-
-                <!-- LinkedIn direct link (visible in About) -->
-                <p class="text-gray-400">
-                    <i data-lucide="linkedin" class="w-4 h-4 inline mr-2 text-blue-400"></i>
-                    <a href="https://www.linkedin.com/in/karthick51" target="_blank" class="text-gold-400 underline">linkedin.com/in/karthick51</a>
-                </p>
-            </div>
+          <p class="text-lg text-gray-300 mb-4"><strong class="text-gold-400">KARTHICK J</strong> | B.Tech in Information Technology</p>
+          <p class="text-gray-400 leading-relaxed">I am a proactive and results-oriented IT professional who builds reliable software and systems using Java, Python, and SQL. I enjoy solving real-world problems, collaborating with teams, and delivering clean, maintainable solutions from prototype to production.</p>
+          <div class="mt-6 space-y-2">
+            <p class="text-gray-400"><i data-lucide="phone" class="w-4 h-4 inline mr-2 text-blue-400"></i> <a href="tel:7904567988" class="text-gray-300">+91 7904567988</a></p>
+            <p class="text-gray-400"><i data-lucide="mail" class="w-4 h-4 inline mr-2 text-blue-400"></i> <a href="mailto:karthickjayavelu5@gmail.com" class="text-gray-300">karthickjayavelu5@gmail.com</a></p>
+            <p class="text-gray-400"><i data-lucide="linkedin" class="w-4 h-4 inline mr-2 text-blue-400"></i> <a href="https://www.linkedin.com/in/karthick51" target="_blank" class="text-gold-400 underline">linkedin.com/in/karthick51</a></p>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-20 border-t border-gray-800 relative overflow-hidden">
+      <h2 class="text-4xl text-center text-white font-bold mb-10">My Technical Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
+
+        <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
+          <div class="flex items-center space-x-3">
+            <svg class="skill-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M20 46c0 5.523 8 10 12 10s12-4.477 12-10" fill="#E44D26"/><path d="M28 6c6 0 12 0 12 0s-3 6-12 6S16 6 16 6s4 0 12 0z" fill="#FF7B00" opacity="0.95"/><path d="M14 34c0 8 10 16 18 16s18-8 18-16" stroke="#C13510" stroke-width="2" stroke-linecap="round"/></g></svg>
+            <h3 class="text-xl font-semibold text-white">Java</h3>
+          </div>
+          <div class="w-full h-2 mt-3 rounded-full bg-gray-700"><div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 88%;"></div></div>
+          <span class="text-sm text-gray-400 mt-1 block">88% Mastery</span>
+          <div class="tooltip">Strong object-oriented programming and core libraries.</div>
+        </div>
+
+        <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
+          <div class="flex items-center space-x-3">
+            <svg class="skill-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M14 22c0-6.627 5.373-12 12-12h12c6.627 0 12 5.373 12 12v6c0 6.627-5.373 12-12 12H26v-6h12" fill="#306998"/><circle cx="26" cy="18" r="2" fill="#FFD43B"/><path d="M50 42c0 6.627-5.373 12-12 12H26c-6.627 0-12-5.373-12-12v-6c0-6.627 5.373-12 12-12h12v6H26" fill="#FFD43B"/><circle cx="38" cy="46" r="2" fill="#306998"/></g></svg>
+            <h3 class="text-xl font-semibold text-white">Python</h3>
+          </div>
+          <div class="w-full h-2 mt-3 rounded-full bg-gray-700"><div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 95%;"></div></div>
+          <span class="text-sm text-gray-400 mt-1 block">95% Mastery</span>
+          <div class="tooltip">Expert in scripting, data structures, automation and libraries (Pandas, NumPy).</div>
+        </div>
+
+        <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
+          <div class="flex items-center space-x-3"><i data-lucide="layout" class="w-8 h-8 text-blue-400"></i><h3 class="text-xl text-white">HTML / CSS</h3></div>
+          <div class="w-full h-2 bg-gray-700 mt-3 rounded-full"><div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 80%;"></div></div>
+          <span class="text-sm text-gray-400">80% Mastery</span>
+          <div class="tooltip">Responsive designs using HTML5, CSS3, Tailwind & Bootstrap.</div>
+        </div>
+
+        <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
+          <div class="flex items-center space-x-3"><i data-lucide="zap" class="w-8 h-8 text-blue-400"></i><h3 class="text-xl text-white">JavaScript</h3></div>
+          <div class="w-full h-2 bg-gray-700 mt-3 rounded-full"><div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 82%;"></div></div>
+          <span class="text-sm text-gray-400">82% Mastery</span>
+          <div class="tooltip">DOM manipulation, async calls, and front-end interactivity.</div>
+        </div>
+
+        <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
+          <div class="flex items-center space-x-3"><i data-lucide="database" class="w-8 h-8 text-gold-400"></i><h3 class="text-xl text-white">MySQL / SQL</h3></div>
+          <div class="w-full h-2 bg-gray-700 mt-3 rounded-full"><div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 90%;"></div></div>
+          <span class="text-sm text-gray-400">90% Mastery</span>
+          <div class="tooltip">Strong DB design & querying.</div>
+        </div>
+
+        <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
+          <div class="flex items-center space-x-3"><i data-lucide="git-branch" class="w-8 h-8 text-blue-400"></i><h3 class="text-xl text-white">Git & GitHub</h3></div>
+          <div class="w-full h-2 bg-gray-700 mt-3 rounded-full"><div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 80%;"></div></div>
+          <span class="text-sm text-gray-400">80% Mastery</span>
+          <div class="tooltip">Collaboration & version control.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 border-t border-gray-800">
+      <h2 class="text-4xl text-center text-white font-bold mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="project-card bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500">
+          <i data-lucide="route" class="w-8 h-8 text-blue-400 mb-4"></i>
+          <h3 class="text-2xl text-white mb-2">Organizational Network</h3>
+          <p class="text-gray-400 text-sm">Secure multi-department network architecture.</p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="showProjectModal('project1')" class="project-action inline-flex items-center py-2 px-3 bg-gold-600 text-white font-medium rounded-md"><i data-lucide="info" class="w-4 h-4 mr-2"></i> Details</button>
+            <button onclick="openProjectOutputs('project1')" class="project-action inline-flex items-center py-2 px-3 bg-blue-600 text-white font-medium rounded-md"><i data-lucide="image" class="w-4 h-4 mr-2"></i> View Output</button>
+          </div>
+        </div>
+
+        <div class="project-card bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500">
+          <i data-lucide="leaf" class="w-8 h-8 text-blue-400 mb-4"></i>
+          <h3 class="text-2xl text-white mb-2">Farmconnect E-Commerce</h3>
+          <p class="text-gray-400 text-sm">Farmer-to-consumer mobile marketplace.</p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="showProjectModal('project3')" class="project-action inline-flex items-center py-2 px-3 bg-gold-600 text-white font-medium rounded-md"><i data-lucide="info" class="w-4 h-4 mr-2"></i> Details</button>
+            <button onclick="openProjectOutputs('project3')" class="project-action inline-flex items-center py-2 px-3 bg-blue-600 text-white font-medium rounded-md"><i data-lucide="image" class="w-4 h-4 mr-2"></i> View Output</button>
+          </div>
+        </div>
+
+        <div class="project-card bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500">
+          <i data-lucide="droplet" class="w-8 h-8 text-blue-400 mb-4"></i>
+          <h3 class="text-2xl text-white mb-2">Blood Bank Management</h3>
+          <p class="text-gray-400 text-sm">Web app for donor/recipient workflow & SMS alerts.</p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="showProjectModal('project4')" class="project-action inline-flex items-center py-2 px-3 bg-gold-600 text-white font-medium rounded-md"><i data-lucide="info" class="w-4 h-4 mr-2"></i> Details</button>
+            <button onclick="openProjectOutputs('project4')" class="project-action inline-flex items-center py-2 px-3 bg-blue-600 text-white font-medium rounded-md"><i data-lucide="image" class="w-4 h-4 mr-2"></i> View Output</button>
+          </div>
+        </div>
+
+        <div class="project-card bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500">
+          <i data-lucide="cpu" class="w-8 h-8 text-blue-400 mb-4"></i>
+          <h3 class="text-2xl text-white mb-2">IoT Home Automation (Voice)</h3>
+          <p class="text-gray-400 text-sm">Google Assistant + NodeMCU voice-controlled prototype.</p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="showProjectModal('project5')" class="project-action inline-flex items-center py-2 px-3 bg-gold-600 text-white font-medium rounded-md"><i data-lucide="info" class="w-4 h-4 mr-2"></i> Details</button>
+            <button onclick="openProjectOutputs('project5')" class="project-action inline-flex items-center py-2 px-3 bg-blue-600 text-white font-medium rounded-md"><i data-lucide="image" class="w-4 h-4 mr-2"></i> View Output</button>
+          </div>
+        </div>
+
+        <div class="project-card bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500">
+          <i data-lucide="file-text" class="w-8 h-8 text-blue-400 mb-4"></i>
+          <h3 class="text-2xl text-white mb-2">Patient Data Management</h3>
+          <p class="text-gray-400 text-sm">CRUD system for hospital patient records and admin tools.</p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="showProjectModal('project6')" class="project-action inline-flex items-center py-2 px-3 bg-gold-600 text-white font-medium rounded-md"><i data-lucide="info" class="w-4 h-4 mr-2"></i> Details</button>
+            <button onclick="openProjectOutputs('project6')" class="project-action inline-flex items-center py-2 px-3 bg-blue-600 text-white font-medium rounded-md"><i data-lucide="image" class="w-4 h-4 mr-2"></i> View Output</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="graduation" class="py-20 border-t border-gray-800">
+      <h2 class="text-4xl text-center text-white mb-10">Graduation & Education</h2>
+      <div class="bg-gray-900 p-8 rounded-xl mb-8 max-w-4xl mx-auto">
+        <h3 class="text-2xl text-gold-400">B.Tech IT</h3>
+        <p class="text-gray-300">Hindustan University, Chennai</p>
+        <p class="text-gray-400 text-sm">CGPA: 9/10 | 2025</p>
+      </div>
+      <div class="max-w-3xl mx-auto text-center mb-8"><p class="text-gray-300 leading-relaxed">During my time at Hindustan Institute of Technology and Science I dove into practical projects and internships that bridged theory with real systems — from network simulations to IoT prototypes and full-stack web apps. College taught me not just technical skills but how to collaborate, debug under pressure, and deliver working solutions that solve real user problems.</p></div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto justify-center">
+        <img src="B69687E1-D297-4ECA-A67B-F07DEACE5437.jpeg.JPG" class="rounded-lg border-2 border-gray-800 hover:border-gold-400 image-gallery-item">
+        <img src="FFB5F0DA-1F19-4BAD-A26F-FE0319198289.jpeg.JPG" class="rounded-lg border-2 border-gray-800 hover:border-gold-400 image-gallery-item">
+        <img src="451D0FD3-21C8-495A-8018-E3F2BB95E66A.jpeg.JPG" class="rounded-lg border-2 border-gray-800 hover:border-gold-400 image-gallery-item">
+        <img src="164E9A10-C74F-42FB-8549-5EE4D0497988.jpeg.jpg" class="rounded-lg border-2 border-gray-800 hover:border-gold-400 image-gallery-item">
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 border-t border-gray-800">
+      <h2 class="text-4xl text-center text-white mb-10">Get in Touch</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <a href="mailto:karthickjayavelu5@gmail.com" class="contact-link flex items-center p-4 bg-gray-900 rounded-lg border border-gray-800"><i data-lucide="mail" class="w-6 h-6 mr-4 text-blue-400"></i><div><p class="text-sm text-gray-400">Email</p><p class="text-lg text-white">karthickjayavelu5@gmail.com</p></div></a>
+          <a href="https://wa.me/917904567988" class="contact-link flex items-center p-4 bg-gray-900 rounded-lg border border-gray-800"><i data-lucide="message-square" class="w-6 h-6 mr-4 text-blue-400"></i><div><p class="text-sm text-gray-400">WhatsApp</p><p class="text-lg text-white">+91 7904567988</p></div></a>
+          <a href="https://www.linkedin.com/in/karthick51" target="_blank" class="contact-link flex items-center p-4 bg-gray-900 rounded-lg border border-gray-800 hover:border-gold-500 transition-colors"><i data-lucide="linkedin" class="w-6 h-6 mr-4 text-blue-400"></i><div><p class="text-sm text-gray-400">Professional Network</p><p class="text-lg text-white">linkedin.com/in/karthick51</p></div></a>
+        </div>
+
+        <div>
+          <form id="contactForm" class="space-y-4 p-6 bg-gray-900 rounded-xl border border-gray-800">
+            <div><label class="text-sm text-gray-300">Name</label><input type="text" id="name" required class="mt-1 w-full px-4 py-3 bg-gray-800 text-white rounded-md"></div>
+            <div><label class="text-sm text-gray-300">Email</label><input type="email" id="email" required class="mt-1 w-full px-4 py-3 bg-gray-800 text-white rounded-md"></div>
+            <div><label class="text-sm text-gray-300">Message</label><textarea id="message" rows="4" required class="mt-1 w-full px-4 py-3 bg-gray-800 text-white rounded-md"></textarea></div>
+            <button type="submit" class="w-full py-3 bg-blue-500 text-white font-bold rounded-md">Send Message</button>
+            <p id="formStatus" class="mt-3 text-center text-sm text-gray-400"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="md:ml-56 py-6 border-t border-gray-800 text-center text-gray-500 text-sm">© 2025 KARTHICK J — Portfolio</footer>
+
+  <!-- RESUME MODAL (iframe + image fallback) -->
+  <!-- RESUME MODAL (replace existing) -->
+<div id="resumeModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+  <div class="bg-gray-900 rounded-xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col">
+    <div class="p-3 flex justify-between items-center border-b border-gray-800">
+      <h2 class="text-xl font-bold text-gold-400">My Resume</h2>
+      <div class="flex items-center gap-2">
+        <a id="resumeOpenNewBtn" class="text-sm text-gray-300 hover:underline" href="#" target="_blank" rel="noopener">Open in new tab</a>
+        <a id="resumeDownloadBtn" class="text-sm text-gray-300 hover:underline" href="#" download>Download</a>
+        <button id="resumeCloseBtn" class="text-white ml-2"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
     </div>
-</section>
 
-        <!-- SKILLS SECTION -->
-        <section id="skills" class="py-20 border-t border-gray-800 relative overflow-hidden">
-            <h2 class="text-4xl text-center text-white font-bold mb-10">My Technical Skills</h2>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 relative z-10">
-
-                <!-- SKILL 1 -->
-                <!-- Python skill card: swap icon for a logo -->
-<div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
-    <div class="flex items-center space-x-3">
-        <!-- local image logo (place python-logo.png in project root) -->
-        <img src="python-logo.png" alt="Python logo" class="w-8 h-8 rounded-sm object-contain">
-        <h3 class="text-xl font-semibold text-white">Python</h3>
+    <div class="p-4 flex-grow overflow-auto flex items-center justify-center">
+      <iframe id="resumeIframe" class="w-full h-[80vh] hidden" frameborder="0" style="border-radius:8px;"></iframe>
+      <img id="resumeImg" class="hidden" alt="Resume preview" />
+      <div id="resumeFallbackMessage" class="text-center text-gray-400 hidden">
+        <p>No resume file found in the project folder.</p>
+        <p class="mt-2">Make sure <code>resume.pdf</code> or <code>resume.jpg</code> (or <code>resume.png</code> / <code>resume.pdf.png</code>) is placed next to <code>index.html</code>.</p>
+      </div>
     </div>
-
-    <div class="w-full h-2 mt-3 rounded-full bg-gray-700">
-        <div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 95%;"></div>
-    </div>
-    <span class="text-sm text-gray-400 mt-1 block">95% Mastery</span>
-
-    <!-- tooltip text: now positioned above (uses .tooltip CSS from above) -->
-    <div class="tooltip">
-        Expert in scripting, data structures, automation and libraries (Pandas, NumPy, Requests).
-    </div>
+  </div>
 </div>
 
-                <!-- SKILL 2 -->
-                <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
-                    <div class="flex items-center space-x-3">
-                        <i data-lucide="coffee" class="w-8 h-8 text-blue-400"></i>
-                        <h3 class="text-xl text-white">Java</h3>
-                    </div>
-                    <div class="w-full h-2 bg-gray-700 mt-3 rounded-full">
-                        <div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 85%;"></div>
-                    </div>
-                    <span class="text-sm text-gray-400">85% Mastery</span>
-                    <div class="tooltip">Object-oriented programming</div>
-                </div>
 
-                <!-- SKILL 3 -->
-                <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
-                    <div class="flex items-center space-x-3">
-                        <i data-lucide="database" class="w-8 h-8 text-gold-400"></i>
-                        <h3 class="text-xl text-white">MySQL / SQL</h3>
-                    </div>
-                    <div class="w-full h-2 bg-gray-700 mt-3 rounded-full">
-                        <div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 90%;"></div>
-                    </div>
-                    <span class="text-sm text-gray-400">90% Mastery</span>
-                    <div class="tooltip">Strong DB design & querying</div>
-                </div>
-
-                <!-- SKILL 4 -->
-                <div class="skill-item bg-gray-900 p-4 rounded-lg border border-gray-800 hover:border-gold-500">
-                    <div class="flex items-center space-x-3">
-                        <i data-lucide="git-branch" class="w-8 h-8 text-blue-400"></i>
-                        <h3 class="text-xl text-white">Git & GitHub</h3>
-                    </div>
-                    <div class="w-full h-2 bg-gray-700 mt-3 rounded-full">
-                        <div class="skill-bar-inner h-full rounded-full" style="--skill-percent: 80%;"></div>
-                    </div>
-                    <span class="text-sm text-gray-400">80% Mastery</span>
-                    <div class="tooltip">Collaboration & version control</div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="py-20 border-t border-gray-800">
-            <h2 class="text-4xl text-center text-white font-bold mb-10">Featured Projects</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div onclick="showProjectModal('project1')" class="project-card bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500 cursor-pointer">
-                    <i data-lucide="route" class="w-8 h-8 text-blue-400 mb-4"></i>
-                    <h3 class="text-2xl text-white mb-2">Organizational Network</h3>
-                    <p class="text-gray-400 text-sm">Secure multi-department network architecture.</p>
-                </div>
-
-                <div onclick="showProjectModal('project2')" class="project-card bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500 cursor-pointer">
-                    <i data-lucide="lightbulb" class="w-8 h-8 text-blue-400 mb-4"></i>
-                    <h3 class="text-2xl text-white mb-2">Smart Home Automation</h3>
-                    <p class="text-gray-400 text-sm">IoT-based remote control system.</p>
-                </div>
-
-                <div onclick="showProjectModal('project3')" class="project-card bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-500 cursor-pointer">
-                    <i data-lucide="leaf" class="w-8 h-8 text-blue-400 mb-4"></i>
-                    <h3 class="text-2xl text-white mb-2">Farmconnect E-Commerce</h3>
-                    <p class="text-gray-400 text-sm">Farmer-to-consumer mobile marketplace.</p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- GRADUATION SECTION -->
-        <section id="graduation" class="py-20 border-t border-gray-800">
-            <h2 class="text-4xl text-center text-white mb-10">Graduation & Education</h2>
-
-            <div class="bg-gray-900 p-8 rounded-xl mb-8">
-                <h3 class="text-2xl text-gold-400">B.Tech IT</h3>
-                <p class="text-gray-300">Hindustan University, Chennai</p>
-                <p class="text-gray-400 text-sm">CGPA: 9/10 | 2025</p>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="B69687E1-D297-4ECA-A67B-F07DEACE5437.jpeg.JPG" class="rounded-lg border-2 border-gray-800 hover:border-gold-400 image-gallery-item">
-                <img src="FFB5F0DA-1F19-4BAD-A26F-FE0319198289.jpeg.JPG" class="rounded-lg border-2 border-gray-800 hover:border-gold-400 image-gallery-item">
-                <img src="451D0FD3-21C8-495A-8018-E3F2BB95E66A.jpeg.JPG" class="rounded-lg border-2 border-gray-800 hover:border-gold-400 image-gallery-item">
-                <img src="164E9A10-C74F-42FB-8549-5EE4D0497988.jpeg.jpg" class="rounded-lg border-2 border-gray-800 hover:border-gold-400 image-gallery-item">
-            </div>
-        </section>
-
-
-        <!-- HEADSHOTS SECTION -->
-        <section id="headshots" class="py-20 border-t border-gray-800">
-            <h2 class="text-4xl text-center text-white mb-10">Professional Headshots</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <img src="A95BA055-2019-40BD-9B50-6E49D3132FA1.jpeg.JPG" class="rounded-xl border-4 border-blue-500 image-gallery-item">
-                <img src="5BF33CB3-9036-41EA-82E5-509E7CA52681.jpeg.jpg" class="rounded-xl border-4 border-blue-500 image-gallery-item">
-            </div>
-        </section>
-
-
-        <!-- EXPLORE SECTION -->
-        <section id="explore" class="py-20 border-t border-gray-800">
-            <h2 class="text-4xl text-center text-white mb-10">Explore My Adventures</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <img src="img 1.jpg" class="rounded-xl border-2 border-gray-700 image-gallery-item">
-                <img src="3B1C3B50-24ED-4B2C-BB8E-DA018899EFF1.jpeg.jpg" class="rounded-xl border-2 border-gray-700 image-gallery-item">
-                <img src="D1D20A6C-918D-40BB-B062-8B9D53E2E713.jpeg.JPG" class="rounded-xl border-2 border-gray-700 image-gallery-item">
-            </div>
-        </section>
-
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="py-20 border-t border-gray-800">
-            <h2 class="text-4xl text-center text-white mb-10">Get in Touch</h2>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-
-                <div class="space-y-6">
-                    <a href="mailto:karthickjayavelu5@gmail.com" class="contact-link flex items-center p-4 bg-gray-900 rounded-lg border border-gray-800">
-                        <i data-lucide="mail" class="w-6 h-6 mr-4 text-blue-400"></i>
-                        <div>
-                            <p class="text-sm text-gray-400">Email</p>
-                            <p class="text-lg text-white">karthickjayavelu5@gmail.com</p>
-                        </div>
-                    </a>
-
-                    <a href="https://wa.me/917904567988" class="contact-link flex items-center p-4 bg-gray-900 rounded-lg border border-gray-800">
-                        <i data-lucide="message-square" class="w-6 h-6 mr-4 text-blue-400"></i>
-                        <div>
-                            <p class="text-sm text-gray-400">WhatsApp</p>
-                            <p class="text-lg text-white">+91 7904567988</p>
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/karthick51" target="_blank" class="contact-link flex items-center p-4 bg-gray-900 rounded-lg border border-gray-800 hover:border-gold-500 transition-colors">
-    <i data-lucide="linkedin" class="w-6 h-6 mr-4 text-blue-400"></i>
-    <div>
-        <p class="text-sm text-gray-400">Professional Network</p>
-        <p class="text-lg text-white">linkedin.com/in/karthick51</p>
-    </div>
-</a>
-
-                </div>
-
-                <!-- Contact Form -->
-                <div>
-                    <form id="contactForm" class="space-y-4 p-6 bg-gray-900 rounded-xl border border-gray-800">
-                        <div>
-                            <label class="text-sm text-gray-300">Name</label>
-                            <input type="text" id="name" required class="mt-1 w-full px-4 py-3 bg-gray-800 text-white rounded-md">
-                        </div>
-                        <div>
-                            <label class="text-sm text-gray-300">Email</label>
-                            <input type="email" id="email" required class="mt-1 w-full px-4 py-3 bg-gray-800 text-white rounded-md">
-                        </div>
-                        <div>
-                            <label class="text-sm text-gray-300">Message</label>
-                            <textarea id="message" rows="4" required class="mt-1 w-full px-4 py-3 bg-gray-800 text-white rounded-md"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-3 bg-blue-500 text-white font-bold rounded-md">
-                            Send Message
-                        </button>
-
-                        <p id="formStatus" class="mt-3 text-center text-sm text-gray-400"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="md:ml-56 py-6 border-t border-gray-800 text-center text-gray-500 text-sm">
-        © 2025 KARTHICK J — Portfolio
-    </footer>
-
-    <!-- RESUME MODAL -->
-    <div id="resumeModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-        <div class="bg-gray-800 rounded-xl w-full max-w-3xl max-h-[90vh] overflow-hidden flex flex-col">
-
-            <div class="p-4 flex justify-between items-center border-b border-gray-700">
-                <h2 class="text-2xl font-bold text-gold-400">My Resume</h2>
-                <button onclick="hideResumeModal()" class="text-white">
-                    <i data-lucide="x" class="w-6 h-6"></i>
-                </button>
-            </div>
-
-            <div class="p-6 overflow-y-auto flex-grow">
-                <img src="resume.pdf.jpg" onerror="this.outerHTML=document.getElementById('resume-content').innerHTML" class="w-full rounded-lg">
-            </div>
+  <!-- PROJECT MODAL -->
+  <div id="projectModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+    <div class="bg-gray-800 rounded-xl w-full max-w-xl max-h-[90vh] overflow-hidden flex flex-col">
+      <div class="p-4 flex justify-between items-center border-b border-gray-700">
+        <h2 id="projectModalTitle" class="text-2xl text-blue-400 font-bold"></h2>
+        <button onclick="hideProjectModal()" class="text-white"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <div class="p-6 overflow-y-auto space-y-4 text-gray-300">
+        <p id="projectModalDescription"></p>
+        <h3 class="text-xl text-gold-400">Key Features</h3>
+        <ul id="projectModalFeatures" class="list-disc ml-4 space-y-1"></ul>
+        <div class="flex gap-3 mt-4">
+          <a id="projectModalGithubLink" target="_blank" class="inline-flex items-center py-2 px-4 bg-gold-600 text-white font-bold rounded-md"><i data-lucide="github" class="w-5 h-5 mr-2"></i> View on GitHub</a>
+          <button id="projectModalViewOutputBtn" onclick="toggleModalOutputs()" class="inline-flex items-center py-2 px-4 bg-blue-600 text-white font-bold rounded-md"><i data-lucide="image" class="w-5 h-5 mr-2"></i> View Output</button>
         </div>
-    </div>
-
-    <!-- PROJECT MODAL -->
-    <div id="projectModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-        <div class="bg-gray-800 rounded-xl w-full max-w-xl max-h-[90vh] overflow-hidden flex flex-col">
-
-            <div class="p-4 flex justify-between items-center border-b border-gray-700">
-                <h2 id="projectModalTitle" class="text-2xl text-blue-400 font-bold"></h2>
-                <button onclick="hideProjectModal()" class="text-white">
-                    <i data-lucide="x" class="w-6 h-6"></i>
-                </button>
-            </div>
-
-            <div class="p-6 overflow-y-auto space-y-4 text-gray-300">
-                <p id="projectModalDescription"></p>
-
-                <h3 class="text-xl text-gold-400">Key Features</h3>
-                <ul id="projectModalFeatures" class="list-disc ml-4 space-y-1"></ul>
-
-                <a id="projectModalGithubLink" target="_blank" class="inline-flex items-center py-2 px-4 bg-gold-600 text-white font-bold rounded-md">
-                    <i data-lucide="github" class="w-5 h-5 mr-2"></i> View on GitHub
-                </a>
-            </div>
-
+        <div id="projectModalOutputs" class="mt-4 hidden">
+          <h4 class="text-lg text-white mb-2">Project Outputs</h4>
+          <div id="projectOutputsGrid" class="grid grid-cols-1 sm:grid-cols-1 gap-4"></div>
+          <p id="noOutputsText" class="text-gray-500 mt-2">No output images added yet — add image filenames to projectsData[projectId].outputs.</p>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- IMAGE PREVIEW MODAL -->
-    <div id="imagePreviewModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
-        <img id="previewImg" src="" class="max-h-[90vh] rounded-lg">
-    </div>
+  <!-- IMAGE PREVIEW MODAL -->
+  <div id="imagePreviewModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center"><img id="previewImg" src="" class="max-h-[90vh] rounded-lg"></div>
 
-    <!-- JS -->
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

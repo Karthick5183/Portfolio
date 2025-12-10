@@ -1,221 +1,68 @@
-/* -------------------------------------- */
-/* Custom Gold/Navy Theme Configuration   */
-/* -------------------------------------- */
-:root {
-    --neon-color-primary: #FFD700; /* Gold */
-    --neon-color-accent: #3b82f6; /* Blue */
-    --bg-color: #0d0d0d;
-    --text-color: #f3f4f6;
+:root{
+  --neon-color-primary:#FFD700;
+  --neon-color-accent:#3b82f6;
+  --bg-color:#0d0d0d;
+  --text-color:#f3f4f6;
 }
-
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    position: relative;
+body{
+  font-family: 'Inter', sans-serif;
+  background-color:var(--bg-color);
+  color:var(--text-color);
+  position:relative;
 }
-
-/* Tailwind-like Custom Utility Fixes */
-.text-gold-400 { color: #FFD700; }
-.bg-gold-500 { background-color: #FFD700; }
-.hover\:bg-gold-400:hover { background-color: #f5c518; }
-.border-gold-500 { border-color: #FFD700; }
-.focus\:border-gold-500:focus { border-color: #FFD700; }
-.focus\:ring-gold-500:focus { --tw-ring-color: #FFD700; }
-.bg-gold-900\/50 { background-color: rgba(100, 75, 0, 0.5); }
-.text-gold-600 { color: #ccac00; }
-.bg-gold-600 { background-color: #ccac00; }
-.hover\:bg-gold-500:hover { background-color: #FFD700; }
-.border-gold-400 { border-color: #FFD700; }
-.text-blue-400 { color: #3b82f6; }
-.border-blue-500 { border-color: #3b82f6; }
-.hover\:border-blue-500:hover { border-color: #3b82f6; }
-.text-blue-900 { color: rgba(59, 130, 246, 0.2); }
-.text-gold-900 { color: rgba(255, 215, 0, 0.2); }
-
-/* -------------------------------------- */
-/* Background Pattern (Holographic Effect)*/
-/* -------------------------------------- */
-.background-pattern {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    opacity: 0.05;
-    background-image: radial-gradient(var(--neon-color-primary) 1px, transparent 1px),
-                      radial-gradient(var(--neon-color-accent) 1px, transparent 1px);
-    background-size: 50px 50px, 100px 100px;
-    z-index: -1;
-    animation: gradient-shift 60s linear infinite;
+.text-gold-400{color:#FFD700}
+.bg-gold-500{background-color:#FFD700}
+.bg-gold-600{background-color:#ccac00}
+.text-blue-400{color:#3b82f6}
+.border-blue-500{border-color:#3b82f6}
+.background-pattern{
+  position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;
+  opacity:0.05;background-image:radial-gradient(var(--neon-color-primary) 1px,transparent 1px),radial-gradient(var(--neon-color-accent) 1px,transparent 1px);
+  background-size:50px 50px,100px 100px;z-index:-1;animation:gradient-shift 60s linear infinite;
 }
-
-@keyframes gradient-shift {
-    0% { background-position: 0 0, 0 0; }
-    100% { background-position: 500px 500px, -1000px -1000px; }
-}
-
-/* -------------------------------------- */
-/* Neon Effects                           */
-/* -------------------------------------- */
-.neon-glow {
-    box-shadow: 0 0 5px var(--neon-color-primary),
-                0 0 10px var(--neon-color-primary),
-                0 0 20px rgba(59, 130, 246, 0.4);
-    transition: all 0.3s ease;
-}
-
-.neon-glow:hover {
-    box-shadow: 0 0 10px var(--neon-color-primary),
-                0 0 25px var(--neon-color-primary),
-                0 0 40px rgba(59, 130, 246, 0.8);
-}
-
-/* -------------------------------------- */
-/* Custom Scrollbar                       */
-/* -------------------------------------- */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--neon-color-primary);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--bg-color);
-}
-
-/* -------------------------------------- */
-/* Skill Bar Animation                    */
-/* -------------------------------------- */
-.skill-bar-inner {
-    transition: width 1s ease-in-out;
-    background-color: var(--neon-color-primary);
-}
-
-/* -------------------------------------- */
-/* Skill card spacing and tooltip (updated) */
-/* -------------------------------------- */
-.skill-item {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    margin-bottom: 28px; /* allow room for tooltip above */
-    position: relative;  /* tooltip positioned relative to card */
-    overflow: visible;
-}
-
-.skill-item:hover {
-    transform: scale(1.04);
-    box-shadow: 0 14px 30px rgba(0,0,0,0.6), 0 6px 18px rgba(255,215,0,0.12);
-    z-index: 30;
-}
-
-/* Tooltip - appears above card */
-.tooltip {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.22s ease, transform 0.22s ease;
-    z-index: 60;
-    position: absolute;
-    bottom: calc(100% + 12px); /* positions tooltip above card with gap */
-    left: 50%;
-    transform: translateX(-50%) translateY(6px);
-    background: rgba(34,34,36,0.98);
-    color: #e6e6e6;
-    padding: 8px 10px;
-    border-radius: 8px;
-    font-size: 13px;
-    min-width: 160px;
-    text-align: center;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-    border: 1px solid rgba(255,215,0,0.06);
-    pointer-events: none;
-    white-space: normal;
-}
-
-/* tooltip arrow */
-.tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 6px;
-    border-style: solid;
-    border-color: rgba(34,34,36,0.98) transparent transparent transparent;
-}
-
-/* show tooltip on hover */
-.skill-item:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-}
-
-/* -------------------------------------- */
-/* Marquee / Train-like Text Animation    */
-/* -------------------------------------- */
-.marquee-container {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-}
-
-.marquee-text {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 8s linear infinite;
-}
-
-@keyframes marquee {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
-
-/* -------------------------------------- */
-/* Hero Name Styling (dual color via HTML spans) */
-/* -------------------------------------- */
-/* keep no-glow — colors set in HTML using classes .text-white and .text-gold-400 */
-
-/* -------------------------------------- */
-/* Responsive: hide sidebar on small screens */
-/* -------------------------------------- */
-@media (max-width: 768px) {
-    #navbar {
-        display: none !important;
-    }
-}
-
-/* -------------------------------------- */
-/* Force show sidebar on larger screens   */
-/* -------------------------------------- */
-@media (min-width: 768px) {
-    #navbar {
-        display: flex !important;
-    }
-}
-
-/* -------------------------------------- */
-/* Image gallery item visuals (optional)  */
-/* -------------------------------------- */
-.image-gallery-item {
-    cursor: pointer;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-.image-gallery-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* -------------------------------------- */
-/* Small adjustments for contact cards    */
-/* -------------------------------------- */
-.contact-link {
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-.contact-link:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.45);
-}
+@keyframes gradient-shift{0%{background-position:0 0,0 0}100%{background-position:500px 500px,-1000px -1000px}}
+.neon-glow{box-shadow:0 0 5px var(--neon-color-primary),0 0 10px var(--neon-color-primary),0 0 20px rgba(59,130,246,0.4);transition:all .3s ease}
+.neon-glow:hover{box-shadow:0 0 10px var(--neon-color-primary),0 0 25px var(--neon-color-primary),0 0 40px rgba(59,130,246,0.8)}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-thumb{background:var(--neon-color-primary);border-radius:10px}
+::-webkit-scrollbar-track{background:var(--bg-color)}
+.skill-bar-inner{transition:width 1s ease-in-out;background-color:var(--neon-color-primary)}
+.skill-item{transition:transform .25s ease,box-shadow .25s ease;margin-bottom:28px;position:relative;overflow:visible}
+.skill-item:hover{transform:scale(1.04);box-shadow:0 14px 30px rgba(0,0,0,.6),0 6px 18px rgba(255,215,0,.12);z-index:30}
+.tooltip{visibility:hidden;opacity:0;transition:opacity .22s ease,transform .22s ease;z-index:60;position:absolute;bottom:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(6px);background:rgba(34,34,36,.98);color:#e6e6e6;padding:8px 10px;border-radius:8px;font-size:13px;min-width:160px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.5);border:1px solid rgba(255,215,0,.06);pointer-events:none;white-space:normal}
+.tooltip::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border-width:6px;border-style:solid;border-color:rgba(34,34,36,.98) transparent transparent transparent}
+.skill-item:hover .tooltip{visibility:visible;opacity:1;transform:translateX(-50%) translateY(0)}
+.marquee-container{overflow:hidden;white-space:nowrap;width:100%}
+.marquee-text{display:inline-block;padding-left:100%;animation:marquee 8s linear infinite}
+@keyframes marquee{0%{transform:translate(0,0)}100%{transform:translate(-100%,0)}}
+@media (max-width:768px){#navbar{display:none!important}}
+@media (min-width:768px){#navbar{display:flex!important}}
+.image-gallery-item{cursor:pointer;transition:transform .35s ease,box-shadow .35s ease}
+.image-gallery-item:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,.6)}
+.contact-link{transition:transform .18s ease,box-shadow .18s ease}
+.contact-link:hover{transform:translateY(-4px);box-shadow:0 8px 18px rgba(0,0,0,.45)}
+#graduation .max-w-4xl{max-width:880px;margin-left:auto;margin-right:auto}
+.project-action{display:inline-flex;align-items:center;gap:.5rem;transition:transform .15s ease,box-shadow .15s ease;padding-left:.75rem;padding-right:.75rem}
+.project-action:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,.45)}
+#projectOutputsGrid img{width:100%;height:auto;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,.06);cursor:pointer}
+#projectModalOutputs{transition:all .18s ease}
+@media (min-width:1200px){.project-card{padding:1.75rem}}
+.pointer-events-none{pointer-events:none}
+.opacity-60{opacity:.6}
+.skill-icon,.skill-item i[data-lucide]{width:32px;height:32px;display:inline-block;vertical-align:middle;flex-shrink:0}
+.skill-icon{filter:drop-shadow(0 2px 6px rgba(0,0,0,.6))}
+.outputs-scroll{display:flex;gap:1rem;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+.outputs-scroll::-webkit-scrollbar{height:8px}
+.outputs-scroll::-webkit-scrollbar-thumb{background:rgba(255,215,0,.15);border-radius:6px}
+.outputs-scroll::-webkit-scrollbar-track{background:transparent}
+.output-item-wrapper{min-width:260px;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+.project-output-thumb{width:100%;height:auto;border-radius:8px;object-fit:cover;box-shadow:0 8px 20px rgba(0,0,0,.45);transition:transform .15s ease}
+.project-output-thumb:hover{transform:translateY(-6px)}
+#projectOutputsGrid>.outputs-scroll:only-child .output-item-wrapper{justify-content:center}
+@media (max-width:480px){.output-item-wrapper{min-width:180px}}
+#resumeModal{background-color:rgba(0,0,0,.92)}
+#resumeModal .bg-gray-900{background:#0f1720}
+#resumeIframe{width:100%;height:calc(80vh);border:none}
+#resumeImg{display:block;max-width:98%;max-height:80vh;width:auto;height:auto;object-fit:contain;margin:0 auto;border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.6);image-rendering:-webkit-optimize-contrast}
+#resumeModal .p-4{padding:1rem}
+#resumeModal a#resumeDownloadBtn,#resumeModal a#resumeOpenNewBtn{color:#cbd5e1;text-decoration:none}
