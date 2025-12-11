@@ -18,7 +18,7 @@ const projectsData = {
     description: 'Web application to manage donors and recipients, with registration, OTP verification and SMS alerts.',
     features: ['Donor & receiver registration','Blood group availability checking','SMS alert system','Admin dashboard'],
     github: 'https://github.com/Karthick5183/blood-bank-management.git',
-    outputs: ['blood1.png','blood2.png','blood3.png','blood4.png','blood5.png']
+    outputs: ['bd1.jpg','bd2.jpg','bd3.jpg','bd4.jpg',]
   },
   project5: {
     title: 'IoT Based Smart Home Automation (Voice)',
